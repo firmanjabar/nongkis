@@ -2,19 +2,95 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Restaurant Apps Starter Project</title>
+    <title>Nongki's</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Unica+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css"
+    />
   </head>
   <body>
-    <h1>Restaurant Apps Starter Project</h1>
-    <p>Hallo coders! Anda berhasil menjalankan starter project.</p>
-    <p>
-      Jangan lupa untuk menggunakan salah satu gambar yang berada pada
-      ./images/heros sebagai background hero elemen
-    </p>
-    <img src="./images/heros/hero-image_1.jpg" width="450" alt="" />
-    <img src="./images/heros/hero-image_2.jpg" width="450" alt="" />
-    <img src="./images/heros/hero-image_3.jpg" width="450" alt="" />
-    <img src="./images/heros/hero-image_4.jpg" width="450" alt="" />
+    <a href="#main-content" class="skip-link">Menuju ke konten</a>
+    <header class="hero">
+      <nav class="nav">
+        <div class="menu-hp">
+          <div>
+            <a href="/" class="logo-font">
+              Nongki's
+            </a>
+          </div>
+          <div class="menu-container">
+            <button
+              aria-label="button menu dropdown on mobile"
+              class="menu"
+              type="button"
+            >
+              <span class="fa fa-caret-down"></span>
+            </button>
+          </div>
+        </div>
+
+        <ul class="nav-list">
+          <li class="nav-item"><a href="/">Home</a></li>
+          <li class="nav-item"><a href="#">FavoriTe</a></li>
+          <li class="nav-item">
+            <a
+              href="https://github.com/firmanjabar"
+              target="_blank"
+              rel="noopener noreferrer"
+              >AbouT Us</a
+            >
+          </li>
+          <li class="nav-item">
+            <button
+              tabindex="0"
+              aria-label="button for toggle light or dark mode"
+              type="button"
+              id="dark-mode"
+              class="light"
+            >
+              <i class="fas fa-moon"></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      <div tabindex="0" class="hero__inner">
+        <h1 class="hero__title">
+          Good Food is A
+          <span class="hero-bold">Good Mood.</span>
+        </h1>
+        <p class="hero__tagline">
+          Food is the ingredient that bind us together! And nothing brings
+          people together like a Good Food!
+        </p>
+        <a href="#main-content" class="btn">Let's Nongkrong!</a>
+      </div>
+    </header>
+
+    <main>
+      <div id="main-content" class="container">
+        <h2 tabindex="0">Most Favorite</h2>
+        <section id="most-fav"></section>
+      </div>
+    </main>
+
+    <footer tabindex="0">
+      <ul>
+        <li>
+          Copyright © 2020 - Nongki's
+        </li>
+        <li>
+          handcrafted with <i title="love" class="fa fa-heart"></i> by
+          firmanjabar
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>

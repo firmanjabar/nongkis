@@ -1,10 +1,10 @@
 {
-  "name": "restaurant-apps",
+  "name": "nongkis",
   "version": "1.0.0",
-  "description": "",
+  "description": "Web that provide list of cafe and restaurant",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config webpack.dev.js",
+    "dev": "webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "test": "karma start"
   },
