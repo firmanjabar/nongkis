@@ -9,7 +9,7 @@
   );
   --hover-navbar: rgba(240, 240, 240, 0.746);
   --box-shadow: rgba(0, 0, 0, 0.2);
-  --btn: rgba(219, 42, 42);
+  --btn: rgb(219, 42, 42);
   --btn-hover: rgb(250, 58, 58);
 }
 
@@ -24,7 +24,7 @@
   );
   --hover-navbar: rgba(0, 0, 0, 0.746);
   --box-shadow: rgba(255, 255, 255, 0.135);
-  --btn: rgba(219, 42, 42);
+  --btn: rgb(219, 42, 42);
   --btn-hover: rgb(250, 58, 58);
 }
 
