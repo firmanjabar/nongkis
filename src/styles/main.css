@@ -492,6 +492,25 @@ footer li {
   background-color: var(--btn-hover);
 }
 
+.btn2 {
+  font-family: 'Comfortaa', cursive;
+  padding: 0.375em 0.75em;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  background-color: var(--btn);
+  border: 1px solid transparent;
+  font-size: small;
+  border-radius: 0.276em;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn2:hover {
+  background-color: var(--btn-hover);
+}
+
 /* Skip link */
 .skip-link {
   position: absolute;
