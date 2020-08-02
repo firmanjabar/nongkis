@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "test": "karma start"
+    "test": "karma start",
+    "lint": "eslint ./src"
   },
   "keywords": [],
   "author": "Firman Abdul Jabar <firmanabduljabar@gmail.com>",
@@ -17,7 +18,9 @@
     "babel-loader": "^8.1.0",
     "copy-webpack-plugin": "^6.0.3",
     "css-loader": "^3.6.0",
-    "eslint": "^7.4.0",
+    "eslint": "^7.6.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
     "html-webpack-plugin": "^4.3.0",
     "jasmine-ajax": "^4.0.0",
     "jasmine-core": "^3.5.0",
