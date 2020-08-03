@@ -29,8 +29,51 @@ const Detail = {
   async afterRender() {
     const url = UrlParser.parseActiveUrlWithoutCombiner();
     const data = await RestaurantSource.detailRestaurant(url.id);
+
     const detailContainer = document.querySelector('#detail-rest');
     detailContainer.innerHTML += restaurantDetailTemplate(data.restaurant);
+
+    const btnSubmit = document.querySelector('#submit-review');
+    const reviewContainer = document.querySelector('.detail-review');
+    const nameInput = document.querySelector('#inputName');
+    const reviewInput = document.querySelector('#inputReview');
+
+    function doPosting(name, review) {
+      const dataInput = {
+        id: url.id,
+        name,
+        review,
+      };
+      RestaurantSource.postRestaurant(dataInput);
+
+      const options = { year: 'numeric', month: 'long', day: 'numeric' };
+      const date = new Date().toLocaleDateString('id-ID', options);
+      const newReview = `
+      <div class="detail-review-item">
+        <div class="review-header">
+          <p class="review-name"><i title="restaurant" class="fa fa-user-circle" style="font-size:1.3em;"></i>&nbsp;${name}</p>
+          <p class="review-date">${date}</p>
+        </div>
+        <div class="review-body">
+          ${review}
+        </div>
+      </div>
+      `;
+      reviewContainer.innerHTML += newReview;
+    }
+
+    btnSubmit.addEventListener('click', () => {
+      if (nameInput.value === '' || reviewInput.value === '') {
+        // eslint-disable-next-line no-alert
+        alert('Inputan tidak boleh ada yang kosong');
+        nameInput.value = '';
+        reviewInput.value = '';
+      } else {
+        doPosting(nameInput.value, reviewInput.value);
+        nameInput.value = '';
+        reviewInput.value = '';
+      }
+    });
   },
 };
 
