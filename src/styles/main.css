@@ -2,22 +2,22 @@
   --primary-color: #ffffff;
   --secondary-color: #000000;
   --font-color: #1f1f1f;
-  --image-color: linear-gradient(71.9deg, rgba(53, 76, 98, 0.51) -3.77%, rgba(158, 43, 43, 0.17) 92.46%);
-  --hover-navbar: rgba(240, 240, 240, 0.746);
-  --box-shadow: rgba(0, 0, 0, 0.2);
-  --btn: rgb(219, 42, 42);
-  --btn-hover: rgb(250, 58, 58);
+  --image-color: linear-gradient(71.9deg, #354c6282 -3.77%, #9e2b2b2b 92.46%);
+  --hover-navbar: #f0f0f0be;
+  --box-shadow: #00000033;
+  --btn: #db2a2a;
+  --btn-hover: #fa3a3a;
 }
 
 [data-theme='dark'] {
   --primary-color: #000000;
   --secondary-color: #ffffff;
   --font-color: #ffffff;
-  --image-color: linear-gradient(71.9deg, rgba(140, 200, 255, 0.712) -3.77%, rgba(255, 109, 109, 0.582) 92.46%);
-  --hover-navbar: rgba(0, 0, 0, 0.746);
-  --box-shadow: rgba(255, 255, 255, 0.135);
-  --btn: rgb(219, 42, 42);
-  --btn-hover: rgb(250, 58, 58);
+  --image-color: linear-gradient(71.9deg, #8cc8ffb6 -3.77%, #ff6d6d94 92.46%);
+  --hover-navbar: #000000be;
+  --box-shadow: #ffffff22;
+  --btn: #db2a2a;
+  --btn-hover: #fa3a3a;
 }
 
 * {
