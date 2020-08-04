@@ -2,6 +2,7 @@ import 'regenerator-runtime';
 import '../styles/main.css';
 import '../styles/responsive.css';
 import '../styles/form.css';
+import '../styles/like.css';
 import App from './views/App';
 import swRegister from './utils/sw-register';
 

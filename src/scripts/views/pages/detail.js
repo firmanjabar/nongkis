@@ -2,6 +2,7 @@
 import UrlParser from '../../routes/url-parser';
 import RestaurantSource from '../../data/restaurant-source';
 import { restaurantDetailTemplate } from '../templates/template-html';
+import LikeButtonInitiator from '../../utils/like-button-initiator';
 
 const Detail = {
   async render() {
@@ -9,6 +10,7 @@ const Detail = {
     <div class="container">
       <h2 class="title-container">Detail Restaurant</h2>
       <section id="detail-rest"></section>
+      <div class="like" id="likeButtonContainer"></div>
       <div class="form-review">
         <form>
           <div class="mb-3">
@@ -37,6 +39,11 @@ const Detail = {
     const reviewContainer = document.querySelector('.detail-review');
     const nameInput = document.querySelector('#inputName');
     const reviewInput = document.querySelector('#inputReview');
+
+    LikeButtonInitiator.init({
+      likeButtonContainer: document.querySelector('#likeButtonContainer'),
+      data,
+    });
 
     function doPosting(name, review) {
       const dataInput = {
