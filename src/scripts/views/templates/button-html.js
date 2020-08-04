@@ -1,6 +1,3 @@
-/* eslint-disable linebreak-style */
-// import CONFIG from '../../global/config';
-
 const createLikeButtonTemplate = () => `
   <button aria-label="like this movie" id="likeButton" class="like">
      <i class="far fa-heart" aria-hidden="true"></i>

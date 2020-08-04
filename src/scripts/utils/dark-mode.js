@@ -1,5 +1,3 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable no-underscore-dangle */
 const DarkMode = {
   init({ toggle, currentTheme }) {
     toggle.addEventListener('click', (event) => {
@@ -13,7 +11,8 @@ const DarkMode = {
 
   _toggleSwitch(e) {
     e.stopPropagation();
-    const cekTheme = (event) => event.target.classList.value === 'light' || event.path[1].classList.value === 'light';
+    const cekTheme = (event) =>
+      event.target.classList.value === 'light' || event.path[1].classList.value === 'light';
 
     if (cekTheme(e)) {
       document.documentElement.setAttribute('data-theme', 'dark');

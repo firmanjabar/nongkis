@@ -1,11 +1,9 @@
-/* eslint-disable linebreak-style */
 /* eslint-disable no-restricted-globals */
-/* eslint-disable no-underscore-dangle */
 import 'regenerator-runtime/runtime';
 import { precacheAndRoute } from 'workbox-precaching/precacheAndRoute';
 import { cleanupOutdatedCaches } from 'workbox-precaching';
 import { registerRoute } from 'workbox-routing/registerRoute';
-import { StaleWhileRevalidate, CacheFirst } from 'workbox-strategies';
+import { StaleWhileRevalidate, CacheFirst, NetworkFirst } from 'workbox-strategies';
 import { ExpirationPlugin } from 'workbox-expiration';
 import { skipWaiting, clientsClaim, setCacheNameDetails } from 'workbox-core';
 
@@ -24,7 +22,7 @@ precacheAndRoute(self.__WB_MANIFEST, {
 
 registerRoute(
   /^https:\/\/dicoding-restaurant-api\.el\.r\.appspot\.com\/(?:(list|detail))/,
-  new StaleWhileRevalidate({
+  new NetworkFirst({
     cacheName: 'dicoding-restaurant-api',
     plugins: [
       new ExpirationPlugin({
@@ -50,7 +48,6 @@ registerRoute(
 
 registerRoute(
   ({ url }) =>
-    // eslint-disable-next-line implicit-arrow-linebreak
     url.origin === 'https://fonts.googleapis.com' || url.origin === 'https://fonts.gstatic.com',
   new StaleWhileRevalidate(),
 );

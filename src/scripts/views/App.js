@@ -1,12 +1,10 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable no-underscore-dangle */
+/* eslint-disable object-curly-newline */
 import DrawerInitiator from '../utils/drawer-initiator';
 import DarkMode from '../utils/dark-mode';
 import UrlParser from '../routes/url-parser';
 import routes from '../routes/routes';
 
 class App {
-  // eslint-disable-next-line object-curly-newline
   constructor({ button, drawer, content, toggle, currentTheme }) {
     this._button = button;
     this._drawer = drawer;

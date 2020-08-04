@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 import API_ENDPOINT from '../global/api-endpoint';
 import CONFIG from '../global/config';
 

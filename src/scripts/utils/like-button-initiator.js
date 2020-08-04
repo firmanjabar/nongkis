@@ -1,5 +1,3 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable no-underscore-dangle */
 import FavRestaurantIdb from '../data/restaurant-idb';
 import {
   createLikeButtonTemplate,

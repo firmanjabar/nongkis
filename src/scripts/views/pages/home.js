@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 import RestaurantSource from '../../data/restaurant-source';
 import { restaurantItemTemplate } from '../templates/template-html';
 

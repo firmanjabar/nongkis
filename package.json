@@ -7,8 +7,7 @@
     "dev": "webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "test": "karma start",
-    "lint": "eslint ./src",
-    "start": "http-server dist"
+    "lint": "eslint ./src"
   },
   "keywords": [],
   "author": "Firman Abdul Jabar <firmanabduljabar@gmail.com>",
