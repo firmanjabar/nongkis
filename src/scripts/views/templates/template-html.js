@@ -12,7 +12,9 @@ const restaurantItemTemplate = (restaurant, index, lastIndex) => {
   <div class="card ${firstBox(index) ? 'box-ganjil' : ''}">
     <a href="#/detail/${restaurant.id}">
       <div class="img-container">
-        <img class="img-res" alt="${restaurant.name}" src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}"/>
+        <img class="img-res" alt="${restaurant.name}" src="${
+    CONFIG.BASE_IMAGE_URL + restaurant.pictureId
+  }" crossorigin="anonymous"/>
         <span class="card-title">${restaurant.name} - ${restaurant.city}</span>
         <span class="card-rating">
           <i title="ratings" class="fa fa-star"></i>
@@ -32,19 +34,23 @@ const restaurantDetailTemplate = (detail) => `
   <div class="detail">
     <div>
       <div>
-        <img class="img-res2" alt="${detail.name}" src="${CONFIG.BASE_IMAGE_URL + detail.pictureId}"/>
+        <img class="img-res2" alt="${detail.name}" src="${
+  CONFIG.BASE_IMAGE_URL + detail.pictureId
+}" crossorigin="anonymous"/>
       </div>
     </div>
     <ul class="detail-info">
       <li><i title="restaurant" class="fa fa-store"></i>&nbsp;&nbsp;${detail.name}</li>
-      <li><i title="address" class="fa fa-map-marker-alt"></i>&nbsp;&nbsp;&nbsp;${detail.address}, ${detail.city}</li>
+      <li><i title="address" class="fa fa-map-marker-alt"></i>&nbsp;&nbsp;&nbsp;${
+        detail.address
+      }, ${detail.city}</li>
       <li><i title="ratings" class="fa fa-star"></i>&nbsp;&nbsp;${detail.rating}</li>
       <li><p class="truncate2">Description: ${detail.description}</p></li>
       <li>${detail.categories
         .map(
           (category) => `
             <span class="category">${category.name}</span>
-          `
+          `,
         )
         .join('')}
       </li>
@@ -58,7 +64,7 @@ const restaurantDetailTemplate = (detail) => `
             .map(
               (food) => `
                 <li><p>${food.name}</p></li>
-              `
+              `,
             )
             .join('')}
         <ul>
@@ -70,7 +76,7 @@ const restaurantDetailTemplate = (detail) => `
             .map(
               (drink) => `
                 <li><p>${drink.name}</p></li>
-              `
+              `,
             )
             .join('')}
         <ul>
@@ -91,7 +97,7 @@ const restaurantDetailTemplate = (detail) => `
               ${review.review}
             </div>
           </div>
-        `
+        `,
       )
       .join('')}
     </div>
