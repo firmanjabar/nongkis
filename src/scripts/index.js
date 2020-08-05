@@ -8,7 +8,7 @@ import '../styles/form.css';
 import '../styles/like.css';
 import '../styles/spinner.css';
 import App from './views/App';
-// import swRegister from './utils/sw-register';
+import swRegister from './utils/sw-register';
 import WebSocketInitiator from './utils/websocket-initiator';
 import CONFIG from './global/config';
 
@@ -27,6 +27,6 @@ window.addEventListener('hashchange', () => {
 
 window.addEventListener('load', () => {
   app.renderPage();
-  // swRegister();
+  swRegister();
   WebSocketInitiator.init(CONFIG.WEB_SOCKET_SERVER);
 });
