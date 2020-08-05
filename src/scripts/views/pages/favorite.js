@@ -5,7 +5,7 @@ const Favorite = {
   async render() {
     return `
     <div class="container">
-      <h2 class="title-container">Your Favorite Cafe/Restaurant</h2>
+      <h2 class="title-container">Your Favorite Cafe / Restaurant</h2>
       <section id="list-rest"></section>
       </div>
     </div>
@@ -17,7 +17,7 @@ const Favorite = {
     const listContainer = document.querySelector('#list-rest');
     if (data.length === 0) {
       listContainer.innerHTML = `
-        There is no data yet!
+        You don't have any Favorite Cafe or Restaurant
       `;
     }
     const totalRest = data.length;

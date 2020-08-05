@@ -268,7 +268,11 @@ main {
   width: 100%;
   top: 0;
   left: 0;
-  background: linear-gradient(71.9deg, rgba(53, 76, 98, 0.71) -3.77%, rgba(158, 43, 43, 0.37) 92.46%);
+  background: linear-gradient(
+    71.9deg,
+    rgba(53, 76, 98, 0.71) -3.77%,
+    rgba(158, 43, 43, 0.37) 92.46%
+  );
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
 }
@@ -320,6 +324,7 @@ main {
 #list-rest {
   display: grid;
   grid-gap: 1.545em;
+  background-color: var(--primary-color);
 }
 
 /* DETAIL */

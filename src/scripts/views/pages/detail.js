@@ -3,26 +3,30 @@ import RestaurantSource from '../../data/restaurant-source';
 import { restaurantDetailTemplate } from '../templates/template-html';
 import LikeButtonInitiator from '../../utils/like-button-initiator';
 import PostReview from '../../utils/post-review';
+import Spinner from '../templates/spinner-html';
 
 const Detail = {
   async render() {
     return `
-    <div class="container">
-      <h2 class="title-container">Detail Restaurant</h2>
-      <section id="detail-rest"></section>
-      <div class="like" id="likeButtonContainer"></div>
-      <div class="form-review">
-        <form>
-          <div class="mb-3">
-            <label for="inputName" class="form-label">Name</label>
-            <input type="text" class="form-control" id="inputName">
-          </div>
-          <div class="mb-3">
-            <label for="inputReview" class="form-label">Review</label>
-            <input type="text" class="form-control" id="inputReview">
-          </div>
-          <button id="submit-review" type="submit" class="btn2">Submit</button>
-        </form>
+      <div class="container">
+      <div id="loading"></div>
+      <div class="main">
+        <h2 class="title-container">Detail Restaurant</h2>
+        <section id="detail-rest"></section>
+        <div class="like" id="likeButtonContainer"></div>
+        <div class="form-review">
+          <form>
+            <div class="mb-3">
+              <label for="inputName" class="form-label">Name</label>
+              <input type="text" class="form-control" id="inputName">
+            </div>
+            <div class="mb-3">
+              <label for="inputReview" class="form-label">Review</label>
+              <input type="text" class="form-control" id="inputReview">
+            </div>
+            <button id="submit-review" type="submit" class="btn2">Submit</button>
+          </form>
+        </div>
       </div>
     </div>
     `;
@@ -30,19 +34,32 @@ const Detail = {
 
   async afterRender() {
     const url = UrlParser.parseActiveUrlWithoutCombiner();
-    const data = await RestaurantSource.detailRestaurant(url.id);
-
     const detailContainer = document.querySelector('#detail-rest');
-    detailContainer.innerHTML += restaurantDetailTemplate(data.restaurant);
+    const loading = document.querySelector('#loading');
+    const main = document.querySelector('.main');
+    loading.innerHTML = Spinner();
+    main.style.display = 'none';
+
+    try {
+      const data = await RestaurantSource.detailRestaurant(url.id);
+      detailContainer.innerHTML += restaurantDetailTemplate(data.restaurant);
+
+      LikeButtonInitiator.init({
+        likeButtonContainer: document.querySelector('#likeButtonContainer'),
+        data,
+      });
+
+      main.style.display = 'block';
+      loading.style.display = 'none';
+    } catch (err) {
+      detailContainer.innerHTML = `Error: ${err}, swipe up to refresh!`;
+      main.style.display = 'block';
+      loading.style.display = 'none';
+    }
 
     const btnSubmit = document.querySelector('#submit-review');
     const nameInput = document.querySelector('#inputName');
     const reviewInput = document.querySelector('#inputReview');
-
-    LikeButtonInitiator.init({
-      likeButtonContainer: document.querySelector('#likeButtonContainer'),
-      data,
-    });
 
     btnSubmit.addEventListener('click', (e) => {
       e.preventDefault();

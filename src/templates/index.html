@@ -25,64 +25,10 @@
   <body>
     <a href="#main-content" class="skip-link">Menuju ke konten</a>
     <header class="hero">
-      <nav class="nav">
-        <div class="menu-hp">
-          <div>
-            <a href="/" class="logo-font">
-              Nongki's
-            </a>
-          </div>
-          <div class="menu-container">
-            <button aria-label="button menu dropdown on mobile" class="menu" type="button">
-              <span class="fa fa-caret-down"></span>
-            </button>
-          </div>
-        </div>
-
-        <ul class="nav-list">
-          <li class="nav-item"><a href="#/home">Home</a></li>
-          <li class="nav-item"><a href="#/favorite">FavoriTe</a></li>
-          <li class="nav-item">
-            <a href="https://github.com/firmanjabar" target="_blank" rel="noopener noreferrer"
-              >AbouT Us</a
-            >
-          </li>
-          <li class="nav-item">
-            <button
-              tabindex="0"
-              aria-label="button for toggle light or dark mode"
-              type="button"
-              id="dark-mode"
-              class="light"
-            >
-              <i class="fas fa-moon"></i>
-            </button>
-          </li>
-        </ul>
-      </nav>
-
-      <div class="hero__inner">
-        <h1 class="hero__title">
-          Good Food is A
-          <span class="hero-bold">Good Mood.</span>
-        </h1>
-        <p class="hero__tagline">
-          Food is the ingredient that bind us together! And nothing brings people together like a
-          Good Food!
-        </p>
-        <a href="#main-content" class="btn">Let's Nongkrong!</a>
-      </div>
+      <app-bar class="nav"></app-bar>
+      <hero-custom class="hero__inner" />
     </header>
-
     <main id="main-content"></main>
-
-    <footer>
-      <ul>
-        <li>
-          Copyright © 2020 - Nongki's
-        </li>
-        <li>handcrafted with <i title="love" class="fa fa-heart"></i> by firmanjabar</li>
-      </ul>
-    </footer>
+    <footer-ku></footer-ku>
   </body>
 </html>
