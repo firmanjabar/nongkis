@@ -38,7 +38,7 @@ html {
 
 body {
   font-family: 'Comfortaa', cursive;
-  font-size: 12px;
+  font-size: 15px;
   color: var(--font-color);
 }
 
@@ -86,7 +86,7 @@ body {
 .hero__tagline {
   color: var(--primary-color);
   margin: 16px;
-  font-size: 18px;
+  font-size: 14pt;
   font-weight: 300;
   word-spacing: 2px;
   line-height: 1.36em;
@@ -296,7 +296,7 @@ main {
 
 .card-content {
   padding: 1.4em 2em;
-  font-size: small;
+  font-size: medium;
   text-align: left;
 }
 
@@ -339,7 +339,7 @@ main {
 }
 
 .detail h3 {
-  font-size: 1.3em;
+  font-size: 1.5em;
   padding: 1em 1em 0 1em;
   background-color: var(--primary-color);
   font-weight: bold;
@@ -355,7 +355,7 @@ main {
 
 .detail-menu h4 {
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.37em;
   padding: 1em;
   background-color: var(--primary-color);
 }
@@ -441,6 +441,8 @@ main {
 
 .review-name {
   font-weight: bold;
+  display: flex;
+  align-items: center;
 }
 
 .review-date {
@@ -449,7 +451,7 @@ main {
 }
 
 .review-body {
-  padding: 1.3em;
+  padding: 1.5em;
 }
 
 /*
@@ -506,7 +508,7 @@ footer li {
   vertical-align: middle;
   background-color: var(--btn);
   border: 1px solid transparent;
-  font-size: small;
+  font-size: medium;
   border-radius: 0.276em;
   cursor: pointer;
   text-decoration: none;

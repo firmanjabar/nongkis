@@ -29,7 +29,7 @@
   nav {
     display: flex;
     flex-direction: column;
-    padding: 3em 0;
+    padding: 1.3em 0;
     height: 175px;
     flex-wrap: wrap;
   }
