@@ -7,8 +7,8 @@ class FooterKu extends HTMLElement {
     this.innerHTML = `
       <footer>
         <ul>
-          <li>Copyright © 2020 - Nongki's</li>
-          <li>handcrafted with <i title="love" class="fa fa-heart"></i> by firmanjabar</li>
+          <li><span>Copyright © 2020 - Nongki's</span></li>
+          <li><span>handcrafted with <i title="love" class="fa fa-heart"></i> by firmanjabar</span></li>
         </ul>
       </footer>
     `;

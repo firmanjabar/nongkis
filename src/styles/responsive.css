@@ -25,16 +25,19 @@
   }
   .menu span {
     text-align: center;
+    color: var(--secondary-color);
   }
+
   nav {
     display: flex;
     flex-direction: column;
-    padding: 1.3em 0;
-    height: 175px;
+    padding: 1.5em 1em;
     flex-wrap: wrap;
   }
   .nav-list {
     display: none;
+    position: absolute;
+    top: 15vh;
   }
 
   .nav-list-block {
@@ -43,6 +46,15 @@
 
   .truncate2 {
     -webkit-line-clamp: 2;
+  }
+
+  .hero {
+    min-height: 500px;
+  }
+
+  .hero__inner {
+    padding-top: 1em;
+    padding-bottom: 0em;
   }
 }
 

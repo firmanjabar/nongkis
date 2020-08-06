@@ -8,10 +8,10 @@ const restaurantItemTemplate = (restaurant, index, lastIndex) => {
   <div class="card ${firstBox(index) ? 'box-ganjil' : ''}">
     <a href="#/detail/${restaurant.id}">
       <div class="img-container">
-        <img class="img-res" alt="${restaurant.name}" src="${
+        <img class="img-res" alt="image ${restaurant.name}" src="${
     CONFIG.BASE_IMAGE_URL + restaurant.pictureId
   }" crossorigin="anonymous"/>
-        <span class="card-title">${restaurant.name} - ${restaurant.city}</span>
+        <span class="card-title"><p>${restaurant.name} - ${restaurant.city}</p></span>
         <span class="card-rating">
           <i title="ratings" class="fa fa-star"></i>
           <span>${restaurant.rating}</span>
@@ -30,17 +30,17 @@ const restaurantDetailTemplate = (detail) => `
   <div class="detail">
     <div>
       <div>
-        <img class="img-res2" alt="${detail.name}" src="${
+        <img class="img-res2" alt="image ${detail.name}" src="${
   CONFIG.BASE_IMAGE_URL + detail.pictureId
 }" crossorigin="anonymous"/>
       </div>
     </div>
     <ul class="detail-info">
-      <li><i title="restaurant" class="fa fa-store"></i>&nbsp;&nbsp;${detail.name}</li>
-      <li><i title="address" class="fa fa-map-marker-alt"></i>&nbsp;&nbsp;&nbsp;${
-        detail.address
-      }, ${detail.city}</li>
-      <li><i title="ratings" class="fa fa-star"></i>&nbsp;&nbsp;${detail.rating}</li>
+      <li><span><i title="restaurant" class="fa fa-store"></i>&emsp;${detail.name}</span></li>
+      <li><span><i title="address" class="fa fa-map-marker-alt"></i>&emsp;${detail.address}, ${
+  detail.city
+}</span></li>
+      <li><span><i title="ratings" class="fa fa-star"></i>&emsp;${detail.rating}</span></li>
       <li><p class="truncate2">Description: ${detail.description}</p></li>
       <li>${detail.categories
         .map(

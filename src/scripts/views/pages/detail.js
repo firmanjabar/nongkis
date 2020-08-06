@@ -18,11 +18,11 @@ const Detail = {
           <form>
             <div class="mb-3">
               <label for="inputName" class="form-label">Name</label>
-              <input type="text" class="form-control" id="inputName">
+              <input name="inputName" type="text" class="form-control" id="inputName">
             </div>
             <div class="mb-3">
               <label for="inputReview" class="form-label">Review</label>
-              <input type="text" class="form-control" id="inputReview">
+              <input name="inputReview" type="text" class="form-control" id="inputReview">
             </div>
             <button id="submit-review" type="submit" class="btn2">Submit</button>
           </form>
