@@ -9,7 +9,7 @@
   --btn-hover: #dd1515;
 }
 
-/* [data-theme='dark'] {
+[data-theme='dark'] {
   --primary-color: #000000;
   --secondary-color: #ffffff;
   --font-color: #ffffff;
@@ -18,7 +18,7 @@
   --box-shadow: #ffffff22;
   --btn: #db2a2a;
   --btn-hover: #fa3a3a;
-} */
+}
 
 * {
   padding: 0;
@@ -417,10 +417,6 @@ main {
   background-color: var(--primary-color);
   border: 0.5px solid var(--secondary-color);
   border-width: 0 0 0.5px;
-}
-
-.detail-info li:last-child {
-  border-bottom-width: 0;
 }
 
 /* DETAIL REVIEW */
