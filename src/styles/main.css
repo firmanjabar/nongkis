@@ -38,7 +38,7 @@ html {
 
 body {
   font-family: 'Comfortaa', cursive;
-  font-size: 15px;
+  font-size: 14px;
   color: var(--font-color);
 }
 
@@ -258,8 +258,6 @@ main {
 
 .img-container:hover .img-res {
   transform: scale(1.1);
-  border-top-left-radius: 1em;
-  border-top-right-radius: 1em;
 }
 
 .img-container:hover .card-title p {
@@ -301,7 +299,7 @@ main {
 
 .card-content {
   padding: 1.4em 2em;
-  font-size: medium;
+  font-size: 14px;
   text-align: left;
 }
 
@@ -314,7 +312,7 @@ main {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
   background-color: var(--primary-color);
 }

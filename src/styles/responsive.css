@@ -45,7 +45,10 @@
   }
 
   .truncate2 {
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 8;
+  }
+  .truncate {
+    -webkit-line-clamp: 8;
   }
 
   .hero {
@@ -55,6 +58,10 @@
   .hero__inner {
     padding-top: 1em;
     padding-bottom: 0em;
+  }
+
+  .container {
+    margin: 0.2em;
   }
 }
 
@@ -119,16 +126,17 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  #list-rest {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   main {
     max-width: 1200px;
+  }
+
+  #list-rest {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
