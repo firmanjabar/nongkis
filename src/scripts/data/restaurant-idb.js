@@ -1,5 +1,3 @@
-/* eslint-disable no-prototype-builtins */
-/* eslint-disable consistent-return */
 import { openDB } from 'idb';
 import CONFIG from '../global/config';
 
