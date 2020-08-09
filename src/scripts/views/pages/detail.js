@@ -4,6 +4,7 @@ import { restaurantDetailTemplate } from '../templates/template-html';
 import LikeButtonPresenter from '../../utils/like-button-presenter';
 import PostReview from '../../utils/post-review';
 import Spinner from '../templates/spinner-html';
+import FavRestaurantIdb from '../../data/restaurant-idb';
 
 const Detail = {
   async render() {
@@ -46,6 +47,7 @@ const Detail = {
 
       await LikeButtonPresenter.init({
         likeButtonContainer: document.querySelector('#likeButtonContainer'),
+        favoriteRestaurant: FavRestaurantIdb,
         data,
       });
 
