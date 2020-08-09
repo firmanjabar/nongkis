@@ -4,7 +4,7 @@ import {
   createUnlikeRestButtonTemp,
 } from '../views/templates/button-html';
 
-const LikeButtonInitiator = {
+const LikeButtonPresenter = {
   async init({ likeButtonContainer, data }) {
     this._likeButtonContainer = likeButtonContainer;
     this._restaurant = data.restaurant;
@@ -48,4 +48,4 @@ const LikeButtonInitiator = {
   },
 };
 
-export default LikeButtonInitiator;
+export default LikeButtonPresenter;
