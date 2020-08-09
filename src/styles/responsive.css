@@ -57,7 +57,7 @@
 
   .hero__inner {
     padding-top: 1em;
-    padding-bottom: 0em;
+    padding-bottom: 0;
   }
 
   .container {
@@ -129,9 +129,9 @@
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1400px) {
   main {
-    max-width: 1200px;
+    max-width: 1400px;
   }
 
   #list-rest {

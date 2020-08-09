@@ -2,7 +2,7 @@
 import CONFIG from '../../global/config';
 
 const restaurantItemTemplate = (restaurant, index, lastIndex) => {
-  const firstBox = (numbIndex) => numbIndex === 0 && lastIndex % 3 !== 0;
+  const firstBox = (numbIndex) => numbIndex === 0 && lastIndex % 2 !== 0;
 
   return `
   <div class="card ${firstBox(index) ? 'box-ganjil' : ''}">

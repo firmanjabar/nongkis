@@ -44,7 +44,7 @@ const Detail = {
       const data = await RestaurantSource.detailRestaurant(url.id);
       detailContainer.innerHTML += restaurantDetailTemplate(data.restaurant);
 
-      LikeButtonInitiator.init({
+      await LikeButtonInitiator.init({
         likeButtonContainer: document.querySelector('#likeButtonContainer'),
         data,
       });
