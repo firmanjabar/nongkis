@@ -52,7 +52,7 @@ body {
   min-height: 500px;
   width: 100%;
   text-align: center;
-  background: var(--image-color), url('/images/hero.jpg');
+  background: var(--image-color), url('/images/hero-xl.jpg');
   background-position: center;
   background-color: var(--primary-color);
   object-fit: cover;

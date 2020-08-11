@@ -10,7 +10,7 @@ const restaurantItemTemplate = (restaurant, index, lastIndex) => {
       <div class="img-container">
         <img class="img-res lazyload" alt="image ${
           restaurant.name
-        }" src="./images/placeholder.png" data-src="${
+        }" src="./images/placeholder-large.jpg" data-src="${
     restaurant.pictureId
       ? CONFIG.BASE_IMAGE_URL + restaurant.pictureId
       : 'https://picsum.photos/id/666/800/450?grayscale'
@@ -38,7 +38,9 @@ const createSkeletonItemTemplate = (count) => {
     template += `
     <div class="card ${firstBox(i) ? 'box-ganjil' : ''}">
       <div class="img-container">
-        <img class="img-res" alt="image skeleton" src="./images/placeholder.png" crossorigin="anonymous"/>
+        <img class="img-res" alt="image skeleton" src="./images/placeholder-large.jpg"
+        srcset="./images/placeholder-small.jpg 480w, ./images/placeholder-large.jpg 800w"
+        sizes="(max-width: 600px) 480px, 800px" crossorigin="anonymous"/>
         <span class="card-title"><p>Title - City</p></span>
         <span class="card-rating">
           <i title="ratings" class="fa fa-star"></i>
