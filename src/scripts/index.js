@@ -2,6 +2,8 @@ import 'regenerator-runtime';
 import './components/app-bar';
 import './components/hero';
 import './components/footer-ku';
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 import '../styles/main.css';
 import '../styles/responsive.css';
 import '../styles/form.css';
@@ -25,7 +27,7 @@ window.addEventListener('hashchange', () => {
   app.renderPage();
 });
 
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
   app.renderPage();
   swRegister();
   WebSocketInitiator.init(CONFIG.WEB_SOCKET_SERVER);

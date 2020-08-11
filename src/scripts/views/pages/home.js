@@ -1,5 +1,5 @@
 import RestaurantSource from '../../data/restaurant-source';
-import { restaurantItemTemplate } from '../templates/template-html';
+import { restaurantItemTemplate, createSkeletonItemTemplate } from '../templates/template-html';
 import Spinner from '../templates/spinner-html';
 
 const Home = {
@@ -9,7 +9,9 @@ const Home = {
       <div id="loading"></div>
       <div class="main">
         <h2 class="title-container">List Restaurant</h2>
-        <section id="list-rest"></section>
+        <section id="list-rest">
+          ${createSkeletonItemTemplate(20)}
+        </section>
       </div>
     </div>
     `;
@@ -21,6 +23,7 @@ const Home = {
     loading.innerHTML = Spinner();
     main.style.display = 'none';
     const listContainer = document.querySelector('#list-rest');
+    listContainer.innerHTML = '';
 
     try {
       const data = await RestaurantSource.listRestaurant();
