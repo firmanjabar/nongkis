@@ -7,6 +7,7 @@
   --box-shadow: #00000033;
   --btn: #b20000;
   --btn-hover: #dd1515;
+  --back-menu: #f3f3f3;
 }
 
 [data-theme='dark'] {
@@ -18,6 +19,7 @@
   --box-shadow: #ffffff22;
   --btn: #db2a2a;
   --btn-hover: #fa3a3a;
+  --back-menu: #1d1d1d;
 }
 
 * {
@@ -69,12 +71,12 @@ body {
 .hero__title {
   color: var(--primary-color);
   font-weight: 500;
-  font-size: xx-large;
+  font-size: x-large;
 }
 
 .hero-bold {
   font-weight: bold;
-  font-size: xx-large;
+  font-size: x-large;
   color: var(--secondary-color);
   background-color: var(--primary-color);
   padding: 0.3em 0.2em;
@@ -85,9 +87,9 @@ body {
 
 .hero__tagline {
   color: var(--primary-color);
-  margin: 16px;
-  font-size: 14pt;
-  font-weight: 300;
+  margin: 16px 16px 22px 16px;
+  font-size: 13pt;
+  font-weight: 500;
   word-spacing: 2px;
   line-height: 1.36em;
 }
@@ -111,7 +113,9 @@ nav {
 .menu {
   font-size: 25px;
   display: none;
-  width: 25px;
+  padding: 0 0.3em;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
 }
 
 .logo-font {
@@ -119,7 +123,7 @@ nav {
   font-weight: bold;
   color: var(--secondary-color);
   text-decoration: none;
-  padding: 0.378em 0;
+  padding: 0.378em 0.3em;
 }
 
 .nav-list {
@@ -138,7 +142,7 @@ nav {
 }
 
 .nav-item a {
-  padding: 0.5rem;
+  padding: 0.665rem;
   display: inline-block;
   font-size: 1.38em;
   text-decoration: none;
@@ -146,7 +150,7 @@ nav {
 }
 
 .nav-item button {
-  padding: 0.8065rem;
+  padding: 0.9265rem;
   background-color: transparent;
   border: 0 solid transparent;
   color: var(--secondary-color);
@@ -163,11 +167,6 @@ nav {
 .nav-item button:hover {
   text-decoration: underline;
   color: var(--btn-hover);
-}
-
-.menu {
-  color: var(--primary-color);
-  background-color: var(--secondary-color);
 }
 
 /*

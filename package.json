@@ -9,7 +9,7 @@
     "build-image": "node sharp.js",
     "test": "karma start",
     "lint": "eslint ./src",
-    "e2e": "codeceptjs run"
+    "e2e": "codeceptjs run --steps"
   },
   "keywords": [],
   "author": "Firman Abdul Jabar <firmanabduljabar@gmail.com>",

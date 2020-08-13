@@ -12,7 +12,7 @@ const restaurantItemTemplate = (restaurant, index, lastIndex) => {
           restaurant.name
         }" src="./images/placeholder-large.jpg" data-src="${
     restaurant.pictureId
-      ? CONFIG.BASE_IMAGE_URL + restaurant.pictureId
+      ? CONFIG.BASE_IMAGE_URL_SM + restaurant.pictureId
       : 'https://picsum.photos/id/666/800/450?grayscale'
   }" crossorigin="anonymous"/>
         <span class="card-title"><p>${restaurant.name} - ${restaurant.city}</p></span>
