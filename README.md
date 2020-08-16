@@ -9,11 +9,42 @@
 
 ---
 
+![SS](https://pbs.twimg.com/media/EfjFJfFVAAA3z13?format=jpg&name=large)
+
+---
+
 #### Final Submission dari Kelas [Menjadi Front-End Web Developer Expert (MFWDE) - Dicoding](https://www.dicoding.com/academies/219).
 
 #### Link production: [https://nongki.netlify.app/](https://nongki.netlify.app/)
 
 #### Lighthouse Score: [100 - 100 - 100 -100 - PWA](https://firmanjabar.github.io/lighthouse/nongkis/)
+
+---
+
+<iframe src="https://drive.google.com/file/d/1DzZfX6v7AlvPnCzap77f9sPChMZhVDPP/preview" width="440" height="320"></iframe>
+
+---
+
+### Configure
+
+Get the repo
+
+```cmd
+git clone https://github.com/firmanjabar/nongkis.git
+cd nongkis
+yarn install or npm install
+```
+
+Script
+
+- `yarn dev` - to start locally
+- `yarn build` - to build into folder dist (execute this command before `yarn build-image`)
+- `yarn build-image` - to optimize images
+
+Testing
+
+- `yarn test` - to start integration testing with karma or jasmine
+- `yarn e2e` - to start end to end testing with codecept.js
 
 ---
 
