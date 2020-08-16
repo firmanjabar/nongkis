@@ -21,7 +21,7 @@
 
 ---
 
-<iframe src="https://drive.google.com/file/d/1DzZfX6v7AlvPnCzap77f9sPChMZhVDPP/preview" width="440" height="320"></iframe>
+![Sertifikat](https://pbs.twimg.com/media/EfjIwdIUMAA2Ejo?format=png&name=900x900)
 
 ---
 
