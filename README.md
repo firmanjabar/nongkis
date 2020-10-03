@@ -6,6 +6,7 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![twitter](https://img.shields.io/twitter/follow/firmanjabar?style=social)](https://twitter.com/firmanjabar)
 [![GitHub followers](https://img.shields.io/github/followers/firmanjabar.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/firmanjabar?tab=followers)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/96a39bea-1725-42e8-8352-68e01209ab37/deploy-status)](https://app.netlify.com/sites/nongkis/deploys)
 
 ---
 
