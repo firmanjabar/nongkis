@@ -1,6 +1,6 @@
 # Menjadi Front-End Web Developer Expert
 
-[![Website nongki.netlify.app](https://img.shields.io/website-up-down-green-red/http/nongki.netlify.app.svg)](https://nongki.netlify.app/)
+[![Website nongkis.firmanjabar.my.id](https://img.shields.io/website-up-down-green-red/http/nongki.netlify.app.svg)](https://nongki.netlify.app/)
 [![GitHub release](https://img.shields.io/github/release/firmanjabar/nongkis.svg)](https://GitHub.com/firmanjabar/nongkis/releases/)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
@@ -15,9 +15,9 @@
 
 #### Final Submission dari Kelas [Menjadi Front-End Web Developer Expert (MFWDE) - Dicoding](https://www.dicoding.com/academies/219).
 
-#### Link production: [https://nongki.netlify.app/](https://nongki.netlify.app/)
+#### Link production: [https://nongkis.firmanjabar.my.id/](https://nongkis.firmanjabar.my.id/)
 
-#### Lighthouse Score: [100 - 100 - 100 -100 - PWA](https://firmanjabar.github.io/lighthouse/nongkis/)
+#### Lighthouse Score: [100 - 100 - 100 -100 - PWA](https://lighthouse.firmanjabar.my.id/nongkis/)
 
 ---
 
@@ -38,8 +38,9 @@ yarn install or npm install
 Script
 
 - `yarn dev` - to start locally
-- `yarn build` - to build into folder dist (execute this command before `yarn build-image`)
-- `yarn build-image` - to optimize images
+- `yarn build` - to build into folder dist
+- `yarn bundle-report` - to analyze webpack bundle
+- `yarn lint` - linting
 
 Testing
 
@@ -60,7 +61,9 @@ Testing
 
 ### Testing
 
-- Integration Testing : [Jasmine](https://jasmine.github.io/)
+- Integration Testing :
+  - [Jasmine](https://jasmine.github.io/)
+  - [Karma](https://karma-runner.github.io)
 - End to End Testing (E2E) :
   - [Codecept](https://codecept.io/)
   - [Puppeteer](https://codecept.io/helpers/Puppeteer/#seeinsource)
@@ -84,11 +87,11 @@ Testing
 
 ### Info Lebih Lengkap
 
-- Website : [www.nongki.netlify.app](https://nongki.netlify.app)
+- Website : [firmanjabar.my.id](https://firmanjabar.my.id)
 - Twitter: [@firmanjabar](https://twitter.com/firmanjabar)
 - Instagram : [@firmanjabar](https://instagram.com/firmanjabar)
 - WhatsApp : [085780966635](https://wa.me/6285780966635)
-- Email : [firmanabduljabar@gmail.com](mailto:firmanabduljabar@gmail.com)
+- Email : [hi@firmanjabar.my.id](mailto:hi@firmanjabar.my.id)
 
 ---
 
