@@ -1,6 +1,6 @@
 # Menjadi Front-End Web Developer Expert
 
-[![Website nongkis.firmanjabar.my.id](https://img.shields.io/website-up-down-green-red/http/nongki.netlify.app.svg)](https://nongki.netlify.app/)
+[![Website nongkis.firmanjabar.my.id](https://img.shields.io/website-up-down-green-red/http/nongkis.firmanjabar.my.id.svg)](https://nongkis.firmanjabar.my.id/)
 [![GitHub release](https://img.shields.io/github/release/firmanjabar/nongkis.svg)](https://GitHub.com/firmanjabar/nongkis/releases/)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
