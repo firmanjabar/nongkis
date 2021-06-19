@@ -113,7 +113,7 @@ const restaurantDetailTemplate = (detail) => `
     </div>
     <h3 class="title-review">Reviews</h3>
     <div class="detail-review grid-3">
-    ${detail.consumerReviews
+    ${detail.customerReviews
       .map(
         (review) =>
           `
