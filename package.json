@@ -39,7 +39,7 @@
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^4.0.2",
     "puppeteer": "^5.2.1",
-    "sharp": "^0.25.4",
+    "sharp": "^0.30.5",
     "style-loader": "^1.2.1",
     "webpack": "^4.43.0",
     "webpack-bundle-analyzer": "^3.8.0",
